@@ -17,7 +17,7 @@
 # limitations under the License.
 #
 
-['rails'].each do |gem_name|
+['rails', 'mysql'].each do |gem_name|
   gem_package gem_name do
     action :install
   end
