@@ -17,7 +17,7 @@
 # limitations under the License.
 #
 
-package 'libmysqlclient-dev'
+package 'libmysqlclient-dev' do 
   action :install
 end
 
