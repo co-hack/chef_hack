@@ -25,7 +25,6 @@
     uid user_data[:uid]
     home "/home/#{username}"
     shell "/bin/bash"
-    password user_data[:password]
     supports :manage_home => true
     action [:create, :manage]
   end
