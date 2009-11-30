@@ -17,11 +17,20 @@
 # limitations under the License.
 #
 
+node[:groups].each do |group_key, config|
+  group group_key do
+    group_name group_key.to_s
+    gid config[:gid]
+    action [:create, :manage]
+  end
+end
+
 ['taelor', 'penguincoder', 'rledge21', 'cohack'].each do |username|
   user_data = node[:users][username]
   user username do
     comment user_data[:comment]
     uid user_data[:uid]
+    gid 5000
     home "/home/#{username}"
     shell "/bin/bash"
     password user_data[:password]

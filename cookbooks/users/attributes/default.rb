@@ -1,9 +1,9 @@
 users Mash.new unless attribute?("users")
-#groups Mash.new unless attribute?("groups")
+groups Mash.new unless attribute?("groups")
 #ssh_keys Mash.new unless attribute?("ssh_keys")
 #roles Mash.new unless attribute?("roles")
  
-#groups[:app] = {:gid => 5000}
+groups[:wheel] = {:gid => 5000}
 #groups[:site] = {:gid => 6000}
 #groups[:admin] = {:gid => 7000}
  
