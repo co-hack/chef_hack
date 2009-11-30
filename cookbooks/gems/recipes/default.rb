@@ -17,6 +17,10 @@
 # limitations under the License.
 #
 
+package 'libmysqlclient-dev'
+  action :install
+end
+
 ['rails', 'mysql'].each do |gem_name|
   gem_package gem_name do
     action :install
