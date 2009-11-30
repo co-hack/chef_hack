@@ -12,10 +12,10 @@ users Mash.new unless attribute?("users")
  
 # passwords must be in shadow password format with a salt. To generate: openssl passwd -1
  
-users[:taelor] = {:password => "shadowpass", :comment => "Taylor Redden", :uid => 4001, :group => :admin}
-users[:penguincoder] = {:password => "shadowpass", :comment => "Andrew Coleman", :uid => 4002, :group => :admin}
-users[:rledge21] = {:password => "shadowpass", :comment => "Ralph Edge", :uid => 4003, :group => :admin}
-users[:cohack] = {:password => "shadowpass", :comment => "Co-Hack", :uid => 5000, :group => :admin} 
+users[:taelor] = {:password => "hackme", :comment => "Taylor Redden", :uid => 4001, :group => :admin}
+users[:penguincoder] = {:password => "hackme", :comment => "Andrew Coleman", :uid => 4002, :group => :admin}
+users[:rledge21] = {:password => "hackme", :comment => "Ralph Edge", :uid => 4003, :group => :admin}
+users[:cohack] = {:password => "hackme", :comment => "Co-Hack", :uid => 5000, :group => :admin} 
  
 #ssh_keys[:jose] = "ssh-dss keydata"
 #ssh_keys[:francisco] = "ssh-rsa keydata"
