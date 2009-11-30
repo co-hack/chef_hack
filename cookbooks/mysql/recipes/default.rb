@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: main
+# Cookbook Name:: mysql
 # Recipe:: default
 #
 # Copyright 2009, Example Com
@@ -16,5 +16,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-include_recipe 'users'
-include_recipe 'mysql'
+
+package "mysql" do
+  action :install
+end
