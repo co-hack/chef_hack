@@ -21,7 +21,9 @@ package 'libmysqlclient-dev' do
   action :install
 end
 
-['rails', 'mysql'].each do |gem_name|
+gems = ['rails', 'mysql', 'unicorn', 'haml', 'RedCloth', 'sprockets']
+
+gems.each do |gem_name|
   gem_package gem_name do
     action :install
   end
