@@ -30,7 +30,7 @@ end
   user username do
     comment user_data[:comment]
     uid user_data[:uid]
-    gid 5000
+    gid 4000
     home "/home/#{username}"
     shell "/bin/bash"
     password user_data[:password]
