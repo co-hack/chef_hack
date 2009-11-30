@@ -20,7 +20,6 @@
 ['taelor', 'penguincoder', 'rledge21'].each do |username|
   user_data = node[:users][username]
   user username do
-    puts user_data[:comment]
     comment user_data[:comment]
     uid user_data[:uid]
     home "/home/#{username}"

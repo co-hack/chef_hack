@@ -18,3 +18,4 @@
 #
 include_recipe 'users'
 include_recipe 'mysql'
+include_recipe 'gems'
