@@ -22,7 +22,6 @@
   user username do
     comment config[:comment]
     uid config[:uid]
-    gid config[:group]
     home "/home/#{username}"
     shell "/bin/bash"
     password config[:password]
