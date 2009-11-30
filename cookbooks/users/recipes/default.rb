@@ -19,8 +19,8 @@
 
 ['taelor', 'penguincoder', 'rledge'].each do |username|
   user_data = node[:users][username]
-  puts user_data.inspect
   user username do
+    puts user_data[:comment]
     comment user_data[:comment]
     uid user_data[:uid]
     home "/home/#{username}"
