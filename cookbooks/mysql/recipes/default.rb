@@ -17,6 +17,6 @@
 # limitations under the License.
 #
 
-package "mysql" do
+package "mysql-server" do
   action :install
 end
