@@ -19,6 +19,7 @@
 
 ['taelor', 'penguincoder', 'rledge'].each do |username|
   config = node[:users][username]
+  puts config.inspect
   user username do
     comment config[:comment]
     uid config[:uid]
