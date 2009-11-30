@@ -18,14 +18,14 @@
 #
 
 ['taelor', 'penguincoder', 'rledge'].each do |username|
-  config = node[:users][username]
-  puts config.inspect
+  user_data = node[:users][username]
+  puts user_data.inspect
   user username do
-    comment config[:comment]
-    uid config[:uid]
+    comment user_data[:comment]
+    uid user_data[:uid]
     home "/home/#{username}"
     shell "/bin/bash"
-    password config[:password]
+    password user_data[:password]
     supports :manage_home => true
     action [:create, :manage]
   end
