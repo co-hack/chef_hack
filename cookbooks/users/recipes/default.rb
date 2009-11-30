@@ -17,7 +17,7 @@
 # limitations under the License.
 #
 
-['taelor', 'penguincoder', 'rledge21'].each do |username|
+['taelor', 'penguincoder', 'rledge21', 'cohack'].each do |username|
   user_data = node[:users][username]
   user username do
     comment user_data[:comment]

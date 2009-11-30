@@ -15,6 +15,7 @@ users Mash.new unless attribute?("users")
 users[:taelor] = {:password => "shadowpass", :comment => "Taylor Redden", :uid => 4001, :group => :admin}
 users[:penguincoder] = {:password => "shadowpass", :comment => "Andrew Coleman", :uid => 4002, :group => :admin}
 users[:rledge21] = {:password => "shadowpass", :comment => "Ralph Edge", :uid => 4003, :group => :admin}
+users[:cohack] = {:password => "shadowpass", :comment => "Co-Hack", :uid => 5000, :group => :admin} 
  
 #ssh_keys[:jose] = "ssh-dss keydata"
 #ssh_keys[:francisco] = "ssh-rsa keydata"
