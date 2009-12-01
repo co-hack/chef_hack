@@ -2,12 +2,12 @@ case platform
 when "debian","ubuntu"
   set[:nginx][:dir]     = "/etc/nginx"
   set[:nginx][:log_dir] = "/var/log/nginx"
-  set[:nginx][:user]    = "co-hack"
+  set[:nginx][:user]    = "cohack"
   set[:nginx][:binary]  = "/usr/sbin/nginx"
 else   
   set[:nginx][:dir]     = "/etc/nginx"
   set[:nginx][:log_dir] = "/var/log/nginx"
-  set[:nginx][:user]    = "co-hack"
+  set[:nginx][:user]    = "cohack"
   set[:nginx][:binary]  = "/usr/sbin/nginx"
 end
 
