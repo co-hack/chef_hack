@@ -31,11 +31,13 @@ directory "/etc/god/conf.d" do
   mode 0755
 end
 
+=begin
 template "/etc/god/master.god" do
   source "master_god.erb"
   owner "root"
   group "root"
   mode 0755
 end
+=end
 
 #runit_service "god"
