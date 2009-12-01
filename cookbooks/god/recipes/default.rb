@@ -31,7 +31,7 @@ directory "/etc/god/conf.d" do
   mode 0755
 end
 
-template "/etc/god/master.god" do
+template "/etc/god/master" do
   source "master.god.erb"
   owner "root"
   group "root"
