@@ -26,6 +26,7 @@ directory node[:nginx][:log_dir] do
   action :create
 end
 
+=begin
 %w{nxensite nxdissite}.each do |nxscript|
   template "/usr/sbin/#{nxscript}" do
     source "#{nxscript}.erb"
@@ -34,6 +35,7 @@ end
     group "root"
   end
 end
+
 
 template "nginx.conf" do
   path "#{node[:nginx][:dir]}/nginx.conf"
@@ -49,6 +51,7 @@ template "#{node[:nginx][:dir]}/sites-available/default" do
   group "root"
   mode 0644
 end
+=end
 
 service "nginx" do
   supports :status => true, :restart => true, :reload => true
