@@ -1,5 +1,5 @@
 #
-# Cookbook Name:: gems
+# Cookbook Name:: unicorn
 # Recipe:: default
 #
 # Copyright 2009, Example Com
@@ -17,14 +17,4 @@
 # limitations under the License.
 #
 
-package 'libmysqlclient-dev' do 
-  action :install
-end
-
-gems = ['rails', 'mysql', 'haml', 'RedCloth', 'sprockets']
-
-gems.each do |gem_name|
-  gem_package gem_name do
-    action :install
-  end
-end
+package :unicorn
