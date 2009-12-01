@@ -22,13 +22,13 @@ gem_package "unicorn" do
 end
  
 directory "/etc/unicorn" do
-  owner "app"
-  group "app"
+  owner "cohack"
+  group "cohack"
   mode 0755
 end
  
 directory "/tmp/unicorn" do
-  owner "app"
-  group "app"
+  owner "cohack"
+  group "cohack"
   mode 0755
 end
