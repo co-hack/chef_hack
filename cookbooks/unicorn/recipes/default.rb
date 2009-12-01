@@ -17,4 +17,4 @@
 # limitations under the License.
 #
 
-package :unicorn
+package "unicorn"
